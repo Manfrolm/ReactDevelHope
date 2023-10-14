@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import { PrintName } from './components/PrintName'
+import { Sum } from './components/Sum'
 
 function App() {
 
-  const name= <h1>JSX Expression</h1>;
+  
 
   return (
     <>
-      <PrintName name={name}/> 
+      <Sum a={10} b={5}/>
     </> 
   )
 }
@@ -15,7 +15,4 @@ function App() {
 export default App
 
 
-
-{/* Nel caso in cui la variabile "name" dovesse contenere un'espressione JSX invece di una stringa, 
-React andrà a renderizzare l'espressione JSX come parte del component  */}
 
