@@ -1,5 +1,7 @@
-export function Welcome(props) {
-    return (
-        <p>Welcome {props.name}</p>
-    );
+export function Welcome({ name }) {
+    return <p>Welcome, {name}!</p>;
+  }
+  
+  Welcome.defaultProps = { 
+    name: 'Mario'
   }
