@@ -1,7 +1,8 @@
-export function Welcome({ name }) {
-    return <p>Welcome, {name}!</p>;
-  }
-  
-  Welcome.defaultProps = { 
-    name: 'Mario'
-  }
+export function Welcome({name, age}) {
+  return (
+    <>
+      <p>Welcome, {name}!</p>
+      <p>Your age is {age}</p>
+    </>
+  );
+}
