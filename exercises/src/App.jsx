@@ -3,9 +3,11 @@ import { PrintName } from './components/PrintName'
 
 function App() {
 
+  const name="Mario";
+
   return (
     <>
-      <PrintName name="Mario" />
+      <PrintName name={name}/> 
     </> 
   )
 }
