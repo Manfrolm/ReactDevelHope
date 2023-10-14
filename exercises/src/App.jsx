@@ -19,4 +19,3 @@ function App() {
 export default App
 
 
-{/* Il component, se utilizzato più volte, sarà renderizzato per tutte le volte che viene utilizzato (In questo caso avremo cinque tag h2) */}
