@@ -3,11 +3,11 @@ import { PrintName } from './components/PrintName'
 
 function App() {
 
-  const name="Mario";
+  const name= <h1>JSX Expression</h1>;
 
   return (
     <>
-      <PrintName /> 
+      <PrintName name={name}/> 
     </> 
   )
 }
@@ -15,5 +15,7 @@ function App() {
 export default App
 
 
-{/* Nel caso in cui non dovessimo passare la variabile "name" alla funzione, il component verrà renderizzato comunque ma
-ma l'output del name sarà undefined, quindi "Hello, undefined"  e il nome non apparirà a schermo*/}
+
+{/* Nel caso in cui la variabile "name" dovesse contenere un'espressione JSX invece di una stringa, 
+React andrà a renderizzare l'espressione JSX come parte del component  */}
+
