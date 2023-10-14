@@ -1,12 +1,12 @@
 import { useState } from 'react'
+import { PrintName } from './components/PrintName'
 
 function App() {
-  const hello = "Hello, World!"
 
   return (
     <>
-      <h1>{hello}</h1>
-    </>
+      <PrintName name="Mario" />
+    </> 
   )
 }
 
