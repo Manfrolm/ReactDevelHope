@@ -16,3 +16,7 @@ export function Counter(){
         </>
     )
 }
+
+
+/*Bisogna passare come paramentro una funzione, questo garantisce di lavorare con lo stato più aggiornato e aiuta 
+a prevenire problemi legati ad aggiornamenti asincroni*/
