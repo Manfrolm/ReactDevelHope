@@ -1,14 +1,9 @@
-export function AlertClock() {
-    const handleButtonClick = () => {
-        const currentTime = new Date().toLocaleTimeString();
-        alert(`The current time is: ${currentTime}`)
-    }
-
+export function AlertClock({ onClick }) {
 
     return(
         <>
         <p>Click the button to know the time</p>
-        <button onClick={handleButtonClick}>Click me</button>
+        <button onClick={onClick}>Click me</button>
         </>
     )
 }
