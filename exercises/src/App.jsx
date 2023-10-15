@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { Welcome } from './components/Welcome'
+import { AlertClock} from './components/AlertClock'
 
 function App() {
 
   return (
     <>
-    <Welcome name="John" age={20}/>
+    <AlertClock />
     </>
   )
 }
