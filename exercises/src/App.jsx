@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <Counter initialValue={0} incrementValue={1}/>
+      <Counter initialValue={0} incrementValue={1} decrementValue={10}/>
     </>
   )
 }
