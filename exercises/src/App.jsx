@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import { Clock } from './components/Clock'
+import { MouseClicker} from './components/MouseClicker'
+
 
 function App() {
 
   return (
     <>
-      <Clock />
+      <MouseClicker />
     </>
   )
 }
