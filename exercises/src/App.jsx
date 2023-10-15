@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import { MouseClicker} from './components/MouseClicker'
+import { MultiButton} from './components/MultiButton'
 
 
 function App() {
 
   return (
     <>
-      <MouseClicker />
+      <MultiButton />
     </>
   )
 }
