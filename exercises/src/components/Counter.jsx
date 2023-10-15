@@ -1,7 +1,8 @@
 import {useState} from 'react'
+import { CounterDisplay }  from './CounterDisplay'
 
-export function Counter({initialValue = 0, incrementValue = 1}){
-    const [counter, setCounter] = useState(initialValue);
+export function Counter({initialValue, incrementValue}){
+    const [count, setCounter] = useState(initialValue);
 
     const handleIncrement = () => {
         setCounter((c) => {
@@ -11,12 +12,9 @@ export function Counter({initialValue = 0, incrementValue = 1}){
 
     return (
         <>
-        <h2>Counter: {counter}</h2>
+        <CounterDisplay content={count}/>
         <button onClick={handleIncrement}>Increment</button>
         </>
     )
 }
 
-
-/*Bisogna passare come paramentro una funzione, questo garantisce di lavorare con lo stato più aggiornato e aiuta 
-a prevenire problemi legati ad aggiornamenti asincroni*/
