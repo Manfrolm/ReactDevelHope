@@ -5,7 +5,7 @@ export function Welcome({name, age}) {
     <>
       <p>Welcome, {name}</p>
 
-      {age && <Age age={age} />}
+      {age > 18 && age < 65 && <Age age={age} />}
     </>
   );
 }
