@@ -5,6 +5,7 @@ function handleButtonClick(e){
 }
 
 function handleImageClick(e){
+    e.stopPropagation();
     console.log(e.currentTarget.src)
 }
     
@@ -18,6 +19,6 @@ function handleImageClick(e){
   }
 
 
-  /* Se clicchiamo sull'immagine vedremo in console sia "name" che "src" perchè l'evento è associato al button (target) ma abbiamo azionato l'evento
-  cliccando sull'immagine (currentTarget), se clicchiamo, invece, sul pulsante e non sull'immagine, infatti, vedremo solo "name" 
+  /* Per impedire di far apparire "name" possiamo utilizzare il metodo stopPropagation() che ci permette di prevenire la propagazione 
+  della chiamata dello stesso evento
  */
