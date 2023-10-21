@@ -1,10 +1,11 @@
-import { useState } from 'react'
+
+import { Colors } from './components/Colors'
 
 function App() {
 
   return (
     <>
-      
+      <Colors items={["red", "blue", "green", "yellow"]}/>
     </>
   )
 }
