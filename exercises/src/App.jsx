@@ -1,11 +1,10 @@
-import { FocusInput } from "./components/FocusInput"
-
+import { Mounted } from "./components/Mounted"
 
 function App() {
 
   return (
     <>
-      <FocusInput/>
+      <Mounted/>
     </>
   )
 }
