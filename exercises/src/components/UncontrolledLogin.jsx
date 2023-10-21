@@ -4,20 +4,14 @@ export const UncontrolledLogin = () => {
   function handleSubmit(e) {
     e.preventDefault();
 
-
-    
-    const username = e.target.username.value;
-    const password = e.target.password.value;
-    const remember = e.target.remember.checked;
-
+    const formData = new FormData(e.target);
     const data = {
-        username,
-        password,
-        remember
-      }
-      console.log(data);
-    }
-  
+      username: formData.get("username"),
+      password: formData.get("password"),
+      remember: formData.get("remember") === "on" ? true : false,
+    };
+    console.log(data);
+  }
 
   return (
     <form onSubmit={handleSubmit}>
