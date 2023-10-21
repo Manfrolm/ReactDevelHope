@@ -29,8 +29,14 @@ export function Login({stateLogin}) {
     })
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    stateLogin()
+  }
+
   return (
     <>
+    <form onSubmit={handleSubmit}>
       <input
         name="username"
         value={data.username}
@@ -49,8 +55,9 @@ export function Login({stateLogin}) {
         checked={data.remember}
         onChange={handleInputChange}
       />
-      <button disabled={!data.username || !data.password} name="login" onClick={stateLogin}>Login</button>
+      <button type="submit" disabled={!data.username || !data.password}>Login</button>
       <button name="reset" onClick={handleReset}>Reset</button>
+      </form>
     </>
   );
 }
