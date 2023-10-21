@@ -1,10 +1,10 @@
-import { Mounted } from "./components/Mounted"
+import { Counter } from "./components/Counter"
 
 function App() {
 
   return (
     <>
-      <Mounted/>
+      <Counter/>
     </>
   )
 }
