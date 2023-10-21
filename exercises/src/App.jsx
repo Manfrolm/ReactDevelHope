@@ -1,15 +1,12 @@
-import { Login } from "./components/Login"
+import { UncontrolledLogin } from "./components/UncontrolledLogin"
+
 
 
 function App() {
 
-  const onLogin = () => {
-    alert("Successful Login!")
-  }
-
   return (
     <>
-      <Login stateLogin={onLogin}/>
+      <UncontrolledLogin/>
     </>
   )
 }
