@@ -3,9 +3,13 @@ import { Login } from "./components/Login"
 
 function App() {
 
+  const onLogin = () => {
+    alert("Successful Login!")
+  }
+
   return (
     <>
-      <Login/>
+      <Login stateLogin={onLogin}/>
     </>
   )
 }

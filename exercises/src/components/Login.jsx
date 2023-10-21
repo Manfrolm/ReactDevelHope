@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-export function Login() {
+export function Login({stateLogin}) {
   const [data, setData] = useState({
     username: "",
     password: "",
     remember: false,
   });
+
   const handleInputChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
@@ -40,6 +41,7 @@ export function Login() {
         checked={data.remember}
         onChange={handleInputChange}
       />
+      <button disabled={!data.username || !data.password} name="login" onClick={stateLogin}>Login</button>
     </>
   );
 }
