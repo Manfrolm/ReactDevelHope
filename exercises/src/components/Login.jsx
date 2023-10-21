@@ -21,6 +21,14 @@ export function Login({stateLogin}) {
     });
   };
 
+  const handleReset = () => {
+    setData({
+        username: '',
+        password: '',
+        remember: false
+    })
+  }
+
   return (
     <>
       <input
@@ -42,6 +50,7 @@ export function Login({stateLogin}) {
         onChange={handleInputChange}
       />
       <button disabled={!data.username || !data.password} name="login" onClick={stateLogin}>Login</button>
+      <button name="reset" onClick={handleReset}>Reset</button>
     </>
   );
 }
