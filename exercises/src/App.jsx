@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
 function App() {
-  const hello = "Hello, World!"
+  const hello = <h1>Hello World!</h1>
 
   return (
     <>
-      <h1>{hello}</h1>
+      {hello}
     </>
   )
 }
