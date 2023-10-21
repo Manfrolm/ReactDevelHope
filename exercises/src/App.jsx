@@ -1,15 +1,13 @@
-import { useState } from 'react'
 import { Welcome } from './components/Welcome'
 
 function App() {
 
   return (
     <>
-    <Welcome name="Mario" />
+    <Welcome name={<strong>Mario</strong>} />
     </>
   )
 }
 
 export default App
-
 
