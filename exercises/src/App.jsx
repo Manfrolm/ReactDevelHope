@@ -1,10 +1,10 @@
-import { Colors } from './components/Colors'
+import { TodoList } from './components/TodoList'
 
 function App() {
 
   return (
     <>
-      <Colors/>
+      <TodoList />
     </>
   )
 }
