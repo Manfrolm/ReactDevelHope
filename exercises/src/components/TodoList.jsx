@@ -17,6 +17,10 @@ export const TodoList = () => {
       setTodo("")
   }
 
+  const handleReset = (e) => {
+    setItems([])
+  }
+
 
   return (
     <>
@@ -26,7 +30,8 @@ export const TodoList = () => {
         ))}
       </ul>
       <input type="text" value={todo} onChange={handleChange} />
-      <button onClick={handleTodo}>Click me</button>
+      <button onClick={handleTodo}>Add</button>
+      <button type="reset" onClick={handleReset}>Reset</button>
     </>
   );
 };
