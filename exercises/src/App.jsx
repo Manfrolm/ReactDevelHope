@@ -1,11 +1,11 @@
-import { Welcome } from './components/Welcome'
-import './index.css'
+import { Counter } from './components/Counter'
+
 
 function App() {
 
   return (
     <>
-      <Welcome name="Manfredi"/>
+      <Counter/>
     </>
   )
 }
