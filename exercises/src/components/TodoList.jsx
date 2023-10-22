@@ -14,6 +14,7 @@ export const TodoList = () => {
     setItems((items) => {
         return [...items, todo];
       });
+      setTodo("")
   }
 
 
