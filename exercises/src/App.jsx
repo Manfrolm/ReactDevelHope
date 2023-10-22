@@ -1,11 +1,12 @@
-import { Counter } from './components/Counter'
+
+import { Login } from './components/Login'
 
 
 function App() {
 
   return (
     <>
-      <Counter/>
+      <Login/>
     </>
   )
 }
