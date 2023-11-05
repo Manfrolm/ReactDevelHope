@@ -1,9 +1,9 @@
-import { GithubUser } from "./components/GithubUser";
+import { CurrentPosition } from "./components/CurrentPosition";
 
 function App() {
   return (
     <>
-      <GithubUser username="manfrolm" />
+      <CurrentPosition />
     </>
   );
 }
