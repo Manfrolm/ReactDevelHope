@@ -1,12 +1,10 @@
-import { useState } from 'react'
+import HookCounter from "./components/HookCounter";
+
 
 function App() {
-
-  return (
-    <>
-      
-    </>
-  )
+    return (
+      <HookCounter/>
+    )
 }
 
-export default App
+export default App;
