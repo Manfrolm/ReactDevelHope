@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const API_URL = `https://api.github.com/users/`;
 
-const GitHubUser = ({ username }) => {
+const GithubUser = ({ username }) => {
   const [data, setData] = useState({});
   const [error, setError] = useState(null);
 
@@ -42,4 +42,4 @@ const GitHubUser = ({ username }) => {
   );
 };
 
-export default GitHubUser;
+export default GithubUser;
