@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-     <Container>
+     <Container title="Hello World 2!">
       <h1>Hello world!</h1>
      </Container>
     </>
