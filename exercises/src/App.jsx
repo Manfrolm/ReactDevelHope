@@ -13,11 +13,14 @@ function App() {
     <div>
       <button onClick={() => handleSetLanguage("it")}>IT</button>
       <button onClick={() => handleSetLanguage("en")}>EN</button>
-      <LanguageContext.Provider value={language}>
+      {/* <LanguageContext.Provider value={language}> */}
         <Clock />
-      </LanguageContext.Provider>
+      {/* </LanguageContext.Provider> */}
     </div>
   );
 }
 
 export default App;
+
+// Rimuovendo Context Provider il componente Clock non avrà accesso al componente LanguageContext e quindi lo stesso sarà undefined;
+// In questo caso l'orario verrà mostrato comunque ma non sarà possibile cambiare la lingua.
