@@ -1,12 +1,12 @@
-import { useState } from "react";
-import Clock from "./components/Clock";
-import { LanguageContext } from "./components/LanguageContext";
+import { useState, useContext } from "react";
+import Clock from "./Clock";
+import LanguageContext from "./LanguageContext";
 
 function App() {
   const [language, setLanguage] = useState("it");
 
-  const handleSetLanguage = (newLanguage) => {
-    setLanguage(newLanguage);
+  const handleSetLanguage = (language) => {
+    setLanguage(language);
   };
 
   return (
